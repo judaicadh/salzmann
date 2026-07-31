@@ -1,0 +1,176 @@
+{
+  "_note": "Seed data derived from the collection's documented projects (see the Introduction and Penn Collection pages). Coordinates are representative points for each project's primary location and can be refined. Add, edit, or remove entries freely — the map reads this file directly.",
+  "collectionSearch": "https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection",
+  "locations": [
+    {
+      "id": "juarez",
+      "project": "Luis' Family",
+      "place": "Ciudad Juárez, Mexico",
+      "years": "1965–1967",
+      "lat": 31.6904,
+      "lng": -106.4245,
+      "description": "A photographic essay on the urbanization of a rural Mexican peasant family, begun during Salzmann's Peace Corps training.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ayşe+Gürsan-Salzmann+Collection&search_field=title&q=Luis",
+      "page": "/online6776"
+    },
+    {
+      "id": "nyc-sro",
+      "project": "Single Room Occupancy / Neighbors on the Block",
+      "place": "New York City, USA",
+      "years": "1968–1970",
+      "lat": 40.7920,
+      "lng": -73.9712,
+      "description": "Photographs and films made while working as a research assistant in a single room occupancy hotel on West 95th Street.",
+      "colenda": "https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&q=Single+Room&search_field=title"
+    },
+    {
+      "id": "tlaxcala",
+      "project": "Tlaxcalan Sketches",
+      "place": "Tlaxcala, Mexico",
+      "years": "1969–1971",
+      "lat": 19.3139,
+      "lng": -98.2404,
+      "description": "A photographic portrait of a Mexican village in transition.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ayşe+Gürsan-Salzmann+Collection&search_field=title&q=Tlaxcalan",
+      "page": "/online6776"
+    },
+    {
+      "id": "philadelphia",
+      "project": "City/2, Rittenhouse Square, Vents & Face to Face",
+      "place": "Philadelphia, USA",
+      "years": "1971–2018",
+      "lat": 39.9526,
+      "lng": -75.1652,
+      "description": "Salzmann's home city and recurring subject: people in its parks and streets, the Vents nudes, Rittenhouse Square, and Face to Face: Encounters Between Jews & Blacks.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ayşe+Gürsan-Salzmann+Collection&search_field=title&q=City+2",
+      "page": "/online6776"
+    },
+    {
+      "id": "radauti",
+      "project": "The Last Jews of Rădăuți",
+      "place": "Rădăuți, Romania",
+      "years": "1974–1979",
+      "lat": 47.8449,
+      "lng": 25.9187,
+      "description": "Made on a Fulbright in southern Bukovina, an enduring statement about a vanishing culture — the Eastern European Jews who survived the Holocaust and went home. Includes Souvenirs of a Recent Time and Rădăuți Youth.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ayşe+Gürsan-Salzmann+Collection&search_field=title&q=Last+Jews",
+      "page": "/online6776"
+    },
+    {
+      "id": "jerusalem",
+      "project": "Jerusalem's People in Public",
+      "place": "Jerusalem",
+      "years": "1976–1977",
+      "lat": 31.7683,
+      "lng": 35.2137,
+      "description": "Made during a year spent preparing the exhibition of The Last Jews of Rădăuți at Beth Hatefutsoth.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Jerusalem%27s+People",
+      "page": "/online7691"
+    },
+    {
+      "id": "transylvania",
+      "project": "Miorița",
+      "place": "Transylvania, Romania",
+      "years": "1981–1983",
+      "lat": 45.7983,
+      "lng": 24.1256,
+      "description": "Documents Romanian transhumant shepherd life, inspired by a Romanian ballad and folktales.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Miorita",
+      "page": "/online7691"
+    },
+    {
+      "id": "turkey",
+      "project": "Turkey's Jews",
+      "place": "Istanbul, Turkey",
+      "years": "1984–1989",
+      "lat": 41.0082,
+      "lng": 28.9784,
+      "description": "A two-month invitation to document Jewish monuments in Turkey became a five-year project on the Jews of Turkey.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Turkey",
+      "page": "/online7691"
+    },
+    {
+      "id": "gordion",
+      "project": "Garip at Gordion",
+      "place": "Gordion, Turkey",
+      "years": "2009–2010",
+      "lat": 39.6506,
+      "lng": 32.0056,
+      "description": "An experimental series juxtaposing an Anatolian sheepdog living in Philadelphia with his herding-dog 'cousins' in a village in central Turkey.",
+      "colenda": "https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&q=Gordion&search_field=title"
+    },
+    {
+      "id": "lithuania",
+      "project": "Lithuanian Memories",
+      "place": "Vilnius, Lithuania",
+      "years": "1994–1995",
+      "lat": 54.6872,
+      "lng": 25.2797,
+      "description": "Explores the surviving Jewish communities in what was once the heartland of Yiddishkeit.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Lithuania",
+      "page": "/online9509"
+    },
+    {
+      "id": "santiago-cuba",
+      "project": "La Lucha / The Struggle & Imagining Cutumba",
+      "place": "Santiago de Cuba, Cuba",
+      "years": "1999–2004",
+      "lat": 20.0247,
+      "lng": -75.8219,
+      "description": "Young wrestlers training in the gyms of Santiago de Cuba, and the Ballet Folklórico Cutumba, one of Cuba's oldest folkloric dance companies.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Lucha",
+      "page": "/online9509"
+    },
+    {
+      "id": "argentina",
+      "project": "De Noche / By Night",
+      "place": "Jujuy, Argentina",
+      "years": "2005",
+      "lat": -24.1858,
+      "lng": -65.2995,
+      "description": "A body of work made in a single night on an Easter pilgrimage to a high Andean plateau.",
+      "colenda": "https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&q=Noche&search_field=title"
+    },
+    {
+      "id": "puebla",
+      "project": "Échele Ganas (Do Your Best)",
+      "place": "Sierra Norte de Puebla, Mexico",
+      "years": "2003–2010",
+      "lat": 20.0186,
+      "lng": -97.5158,
+      "description": "Explores the role remittances sent home by Mexican workers in the US play in the economic life of the Sierra Norte de Puebla.",
+      "colenda": "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Ganas",
+      "page": "/online9509"
+    },
+    {
+      "id": "colombia",
+      "project": "Conversos / El Rayo",
+      "place": "Antioquia, Colombia",
+      "years": "2012–2013",
+      "lat": 6.2442,
+      "lng": -75.5812,
+      "description": "A project on Colombian converted Jewish communities, and a film about the artist Ana Uribe at her family's farmstead.",
+      "colenda": "https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&q=Conversos&search_field=title"
+    },
+    {
+      "id": "peru",
+      "project": "Miski Kachi / Sweet Salt / Sal Dulce",
+      "place": "Sacred Valley, Peru",
+      "years": "2016–2018",
+      "lat": -13.3339,
+      "lng": -72.1548,
+      "description": "Documentary and abstract images from Peru's Sacred Valley, made across several trips begun on a Fulbright fellowship.",
+      "colenda": "https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&q=Peru&search_field=title"
+    },
+    {
+      "id": "windley-key",
+      "project": "Windley Key",
+      "place": "Windley Key, Florida, USA",
+      "years": "2016–2017",
+      "lat": 24.9469,
+      "lng": -80.6120,
+      "description": "A small late series on coral in the Florida Keys, among Salzmann's abstract works.",
+      "colenda": "https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&q=Windley&search_field=title"
+    }
+  ]
+}

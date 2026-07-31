@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import locData from '../data/locations.json';
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+const points = locData.locations.map((l) => ({
+  ...l,
+  pageHref: l.page ? `${baseUrl}${l.page}` : undefined,
+}));
+---
+
+<BaseLayout
+  title="Map"
+  description="A map of the places Laurence Salzmann photographed, from Philadelphia to Rădăuți, Istanbul, Santiago de Cuba, and Peru's Sacred Valley."
+>
+  <div class="container">
+    <p class="eyebrow">Where the work was made</p>
+    <h1 class="page-title">Mapping the Collection</h1>
+    <p class="lead map-lead">
+      Over five decades, Laurence Salzmann photographed on four continents — vanishing Jewish
+      communities in Romania, Turkey and Lithuania; indigenous and working life in Mexico, Cuba and
+      Peru; and his home streets of Philadelphia. Each marker is a project; select one to read about it
+      and open its images in Colenda.
+    </p>
+
+    <div class="map-layout">
+      <ul class="map-list" id="map-list" aria-label="Project locations">
+        {
+          points.map((p) => (
+            <li>
+              <button type="button" data-id={p.id}>
+                <span class="p">{p.project}</span>
+                <span class="m">
+                  {p.place} · {p.years}
+                </span>
+              </button>
+            </li>
+          ))
+        }
+      </ul>
+      <div id="map" role="application" aria-label="Interactive map of project locations"></div>
+    </div>
+
+    <p class="note">
+      Locations mark each project's primary place of work; coordinates are representative points and
+      can be refined in <code>src/data/locations.json</code>.
+    </p>
+  </div>
+
+  <script type="application/json" id="map-data" set:html={JSON.stringify(points)} />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" is:inline></script>
+
+  <script is:inline>
+    (function () {
+      function init() {
+        if (typeof L === 'undefined') {
+          setTimeout(init, 60);
+          return;
+        }
+        var points = JSON.parse(document.getElementById('map-data').textContent);
+
+        var map = L.map('map', { scrollWheelZoom: false }).setView([25, -5], 2);
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+          attribution:
+            '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+          maxZoom: 19,
+        }).addTo(map);
+
+        var accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#42586b';
+        var markers = {};
+        var bounds = [];
+
+        points.forEach(function (p) {
+          var popup =
+            '<h3>' + p.project + '</h3>' +
+            '<div class="yr">' + p.place + ' · ' + p.years + '</div>' +
+            '<p>' + (p.description || '') + '</p>' +
+            '<p>' +
+            (p.colenda ? '<a href="' + p.colenda + '" target="_blank" rel="noopener">View on Colenda ↗</a>' : '') +
+            (p.pageHref ? ' &nbsp;·&nbsp; <a href="' + p.pageHref + '">View gallery</a>' : '') +
+            '</p>';
+
+          var m = L.circleMarker([p.lat, p.lng], {
+            radius: 8,
+            color: accent,
+            weight: 2,
+            fillColor: accent,
+            fillOpacity: 0.55,
+          })
+            .addTo(map)
+            .bindPopup(popup, { maxWidth: 280 });
+
+          markers[p.id] = m;
+          bounds.push([p.lat, p.lng]);
+        });
+
+        if (bounds.length) {
+          map.fitBounds(bounds, { padding: [40, 40] });
+        }
+
+        var buttons = document.querySelectorAll('#map-list button');
+        buttons.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var id = btn.getAttribute('data-id');
+            var m = markers[id];
+            if (!m) return;
+            buttons.forEach(function (b) { b.classList.remove('is-active'); });
+            btn.classList.add('is-active');
+            map.flyTo(m.getLatLng(), 5, { duration: 0.6 });
+            m.openPopup();
+          });
+        });
+
+        map.on('popupclose', function () {
+          buttons.forEach(function (b) { b.classList.remove('is-active'); });
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+  </script>
+</BaseLayout>
+
+<style>
+  .map-lead {
+    max-width: var(--measure);
+    margin-bottom: 2rem;
+  }
+</style>

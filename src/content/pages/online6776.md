@@ -1,0 +1,34 @@
+---
+title: "Online Photos 1967–1976"
+heading: "Online photos from the Penn collection, 1967–1976"
+section: "penn"
+order: 2
+gallery:
+  - year: "1967"
+    title: "Luis' Family"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/035bd2398c043cc6714b2b0dc3c1ee50.jpg"
+    url: "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ayşe+Gürsan-Salzmann+Collection&search_field=title&q=Luis"
+    description: "A photographic essay on the urbanization of a rural Mexican peasant family in Juarez, Mexico."
+  - year: "1969"
+    title: "Tlaxcalan Sketches"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/93cbb7a96b8c993ba1fdc12fb57ad947.jpg"
+    url: "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ayşe+Gürsan-Salzmann+Collection&search_field=title&q=Tlaxcalan"
+    description: "A photographic portrait of a Mexican village in transition."
+  - year: "1971"
+    title: "The City 2"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/509513126f86d1515232747cac5a98e0.jpg"
+    url: "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ayşe+Gürsan-Salzmann+Collection&search_field=title&q=City+2"
+    description: "Taken around 1971, these photographs document people interacting in Philadelphia's city parks, street corners, sidewalk cafes, and other venues."
+  - year: "1974–76"
+    title: "Souvenirs of a Recent Time"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/e1d18a22e5b3d1e190d5b6cf55154491.jpg"
+    url: "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ayşe+Gürsan-Salzmann+Collection&search_field=title&q=Souvenirs"
+    description: "These images were largely photographed in Romania from 1974 to 1976."
+  - year: "1974–1976"
+    title: "The Last Jews of Rădăuți"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/a99a0318d6089429c15cddee350a152b.jpg"
+    url: "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ayşe+Gürsan-Salzmann+Collection&search_field=title&q=Last+Jews"
+    description: "Intended to make a powerfully enduring statement about a vanishing culture by illuminating the lives of the small number of Eastern European Jews who survived the Holocaust and went home."
+---
+
+Online photos from the Penn Libraries Colenda repository are available for the photo essays listed below.

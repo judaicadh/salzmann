@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Gallery from '../components/Gallery.astro';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const { Content } = await page.render();
+const data = page.data;
+---
+
+<BaseLayout title={data.title}>
+  <div class="container">
+    <article class={data.gallery ? '' : 'prose'}>
+      <h1 class="page-title">{data.heading}</h1>
+
+      {data.image && <img src={data.image} alt={data.heading} class="lead-image" />}
+
+      <div class={`prose ${data.timeline ? 'prose--timeline' : ''}`}>
+        <Content />
+      </div>
+
+      {data.gallery && <Gallery items={data.gallery} />}
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  .lead-image {
+    max-width: 100%;
+    margin: 0 0 2rem;
+    border-radius: var(--radius);
+  }
+  article:not(.prose) > .page-title {
+    max-width: var(--wide);
+  }
+  /* When the page is a gallery, keep intro text at reading width but grid full width */
+  article:not(.prose) > .prose {
+    max-width: var(--measure);
+  }
+</style>

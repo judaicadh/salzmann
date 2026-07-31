@@ -1,0 +1,31 @@
+---
+import { nav } from '../data/nav';
+
+interface Props {
+  navHref: string;
+  heading: string;
+  lead?: string;
+}
+const { navHref, heading, lead } = Astro.props;
+const item = nav.find((n) => n.href === navHref);
+const children = item?.children ?? [];
+---
+
+<h1 class="page-title">{heading}</h1>
+{lead && <p class="lead landing-lead">{lead}</p>}
+
+<ul class="card-grid">
+  {
+    children.map((child) => (
+      <li class="card">
+        <a href={child.href}>{child.label}</a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .landing-lead {
+    max-width: var(--measure);
+  }
+</style>

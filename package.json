@@ -1,0 +1,16 @@
+{
+  "name": "salzmann-collection",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Static site for the Laurence Salzmann and Ayşe Gürsan-Salzmann Collection, with an interactive map of project locations.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^4.16.18"
+  }
+}

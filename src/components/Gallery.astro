@@ -1,0 +1,42 @@
+---
+interface Item {
+  year?: string;
+  title: string;
+  image: string;
+  url?: string;
+  description?: string;
+}
+interface Props {
+  items: Item[];
+}
+const { items } = Astro.props;
+---
+
+<ul class="gallery">
+  {
+    items.map((item) => (
+      <li class="gallery__item">
+        <a
+          class="gallery__frame"
+          href={item.url ?? '#'}
+          {...(item.url ? { target: '_blank', rel: 'noopener' } : {})}
+        >
+          <img src={item.image} alt={item.title} loading="lazy" />
+        </a>
+        <div class="gallery__meta">
+          {item.year && <div class="gallery__year">{item.year}</div>}
+          <h3 class="gallery__title">
+            {item.url ? (
+              <a href={item.url} target="_blank" rel="noopener">
+                {item.title}
+              </a>
+            ) : (
+              item.title
+            )}
+          </h3>
+          {item.description && <p class="gallery__desc">{item.description}</p>}
+        </div>
+      </li>
+    ))
+  }
+</ul>

@@ -1,0 +1,34 @@
+---
+title: "Online Photos 1976–1991"
+heading: "Online photos from the Penn collection, 1976–1991"
+section: "penn"
+order: 3
+gallery:
+  - year: "1976–1977"
+    title: "Jerusalem's People in Public"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/8d3a46bfa7d37f64af7d89fd7f54a8d8.jpg"
+    url: "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Jerusalem%27s+People"
+    description: "Salzmann spent a year in Israel, and more specifically in Jerusalem, while preparing his exhibit, The Last Jews of Radauti, at the Beth Hatefutsoth Museum."
+  - year: "1979"
+    title: "Jewish Youth of Rădăuți"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/d63ccd71d229f9c0961025292cf7875b.jpg"
+    url: "https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&q=Jewish+Youth&search_field=title"
+    description: "These photos document the younger generations of the Jewish community in Rădăuți, in Romania."
+  - year: "1981–1982"
+    title: "Miorita"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/0d00451699c597ed95d9773a8143e70f.jpg"
+    url: "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Miorita"
+    description: "This series of photographs documents Romanian shepherd life in Transylvania, and was inspired by a Romanian ballad and folktales."
+  - year: "1985"
+    title: "Turkey's Jews"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/a4b686f9ac4c1e07a9c2b1fb2b544f8e.jpg"
+    url: "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Turkey"
+    description: "Mainly created from 1984 to 1989, these photographs document Jewish monuments throughout Turkey as well as Jews of Turkey. Salzmann was invited to Turkey for a three-month stay to photograph what remained of Jewish monuments."
+  - year: "1991"
+    title: "Rittenhouse Square"
+    image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/332397a603bb152933500810c2533c50.jpg"
+    url: "https://colenda.library.upenn.edu/?utf8=%E2%9C%93&f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&search_field=title&q=Rittenhouse"
+    description: "First shown at the Philadelphia Art Alliance in May 1995 as part of a larger show, A Year in the Life of Rittenhouse Square, curated by Stephen Perloff."
+---
+
+Online photos from the Penn Libraries Colenda repository are available for the photo essays listed below.

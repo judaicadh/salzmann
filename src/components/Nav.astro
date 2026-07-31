@@ -1,0 +1,51 @@
+---
+import { nav } from '../data/nav';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+const isActive = (href: string) => {
+  const h = href.replace(/\/$/, '') || '/';
+  return h === path;
+};
+---
+
+<button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+
+<nav class="nav" id="primary-nav" aria-label="Primary">
+  <ul>
+    {
+      nav.map((item) => (
+        <li class={item.children ? 'has-children' : ''}>
+          {item.children ? (
+            <>
+              <a class="top-link" href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
+                {item.label}
+              </a>
+              <ul class="submenu">
+                {item.children.map((child) => (
+                  <li>
+                    <a href={child.href} aria-current={isActive(child.href) ? 'page' : undefined}>
+                      {child.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </>
+          ) : (
+            <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
+              {item.label}
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const menu = document.getElementById('primary-nav');
+  toggle?.addEventListener('click', () => {
+    const open = menu?.classList.toggle('is-open');
+    toggle.setAttribute('aria-expanded', String(!!open));
+  });
+</script>

@@ -1,0 +1,79 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = 'https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/';
+const heroImages = [
+  '89ecf1b2bb9bb48c74f08a4bbb21d2c6',
+  '872926a6c9e70b50aa2e5883e9d55004',
+  '75deb47640ee723ab5cd4da61f244a6c',
+  '102083142f15f0a41ba9020d0147e43d',
+  '46fbf17141813a277638bc02d3f567fc',
+  '65c27cbbb85bb2cfd08716dc38a90894',
+  '7066015505b9622797a25bec1b691ced',
+  '779c696feb7abbd13b5a63f8cac105a4',
+  '51a0ef6679bb2fc8f80efe8ba16d7f29',
+  'c2264a432e4c64a6ce47d54759db7fdc',
+];
+const colenda =
+  'https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&per_page=50';
+---
+
+<BaseLayout title="Home">
+  <div class="container">
+    <p class="eyebrow">University of Pennsylvania Libraries · Kislak Center</p>
+    <h1 class="page-title home-title">
+      Laurence Salzmann &amp; Ayşe Gürsan-Salzmann Collection
+    </h1>
+
+    <div class="hero-grid">
+      {
+        heroImages.map((h) => (
+          <a href={colenda} target="_blank" rel="noopener">
+            <img src={`${base}${h}.jpg`} alt="Photograph from the Salzmann Collection" loading="lazy" />
+          </a>
+        ))
+      }
+    </div>
+
+    <div class="prose home-intro">
+      <p class="lead">
+        Welcome to the University of Pennsylvania Libraries homepage for the
+        <em>Laurence Salzmann and Ayşe Gürsan-Salzmann Collection</em>. Housed at the Libraries' Kislak
+        Center for Special Collections, Rare Books and Manuscripts, the vast majority of the Salzmann
+        collection may be viewed online via the Penn Libraries image repository,
+        <a href={colenda} target="_blank" rel="noopener">Colenda</a>.
+      </p>
+      <p>
+        The Laurence Salzmann collection at the Penn Libraries contains a significant portion of the
+        photographic output from his long career documenting little known communities throughout the
+        world. Researchers will find black and white and color photographs dating from 1967 to 2018, as
+        well as other photographic, book, and film project documentation, such as book mock-ups,
+        exhibition publicity and planning, and biographical sketches of subjects of photographs. Taken
+        as a whole, this collection provides glimpses into a number of worlds not typically documented —
+        immigrants, the poor, shepherds, and changing or vanishing communities. In addition, the
+        viewpoint of the photographer, Laurence Salzmann, is evident, providing insight into the man
+        behind the images.
+      </p>
+
+      <p class="map-cta">
+        <a href="/map">Explore the collection's projects on the map →</a>
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .home-title {
+    max-width: 22ch;
+  }
+  .home-intro {
+    margin-left: 0;
+  }
+  .map-cta {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line);
+  }
+</style>
