@@ -24,4 +24,4 @@ Series II, collected photographs and materials, includes only a few items. These
 
 ## Finding Aid
 
-See the finding aid for the collection [here](https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL.1424) 
+See the finding aid for the collection [here.](https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL.1424) 
