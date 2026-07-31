@@ -1,17 +1,48 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import locData from '../data/locations.json';
+import { temporalCoverage } from '../data/site';
 
 const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
 const points = locData.locations.map((l) => ({
   ...l,
   pageHref: l.page ? `${baseUrl}${l.page}` : undefined,
 }));
+
+const abs = (path: string) => (Astro.site ? new URL(path, Astro.site).href : path);
+
+const jsonLd = [
+  {
+    '@type': 'ItemList',
+    name: 'Project locations',
+    numberOfItems: points.length,
+    itemListElement: points.map((p, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'CreativeWork',
+        name: p.project,
+        description: p.description,
+        creator: { '@id': '#laurence' },
+        ...(temporalCoverage(p.years) ? { temporalCoverage: temporalCoverage(p.years) } : {}),
+        contentLocation: {
+          '@type': 'Place',
+          name: p.place,
+          geo: { '@type': 'GeoCoordinates', latitude: p.lat, longitude: p.lng },
+        },
+        ...(p.pageHref ? { url: abs(p.pageHref) } : {}),
+        ...(p.colenda ? { sameAs: p.colenda } : {}),
+      },
+    })),
+  },
+];
 ---
 
 <BaseLayout
   title="Map"
   description="A map of the places Laurence Salzmann photographed, from Philadelphia to Rădăuți, Istanbul, Santiago de Cuba, and Peru's Sacred Valley."
+  pageType="CollectionPage"
+  jsonLd={jsonLd}
 >
   <div class="container">
     <p class="eyebrow">Where the work was made</p>

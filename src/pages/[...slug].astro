@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Gallery from '../components/Gallery.astro';
+import { temporalCoverage } from '../data/site';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
@@ -14,9 +15,32 @@ export async function getStaticPaths() {
 const { page } = Astro.props;
 const { Content } = await page.render();
 const data = page.data;
+
+const jsonLd = data.gallery
+  ? [
+      {
+        '@type': 'ItemList',
+        name: data.heading,
+        numberOfItems: data.gallery.length,
+        itemListElement: data.gallery.map((g, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          item: {
+            '@type': 'CreativeWork',
+            name: g.title,
+            creator: { '@id': '#laurence' },
+            ...(g.description ? { description: g.description } : {}),
+            ...(g.image ? { image: g.image } : {}),
+            ...(g.url ? { url: g.url } : {}),
+            ...(temporalCoverage(g.year) ? { temporalCoverage: temporalCoverage(g.year) } : {}),
+          },
+        })),
+      },
+    ]
+  : [];
 ---
 
-<BaseLayout title={data.title}>
+<BaseLayout title={data.title} pageType={data.gallery ? 'CollectionPage' : 'WebPage'} jsonLd={jsonLd}>
   <div class="container">
     <article class={data.gallery ? '' : 'prose'}>
       <h1 class="page-title">{data.heading}</h1>

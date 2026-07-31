@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteMeta } from '../data/site';
 
 const base = 'https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/';
 const heroImages = [
@@ -16,9 +17,24 @@ const heroImages = [
 ];
 const colenda =
   'https://digitalcollections.library.upenn.edu/items?f%5Bcollection_ssim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection&per_page=50';
+
+const jsonLd = [
+  {
+    '@type': 'Collection',
+    '@id': '#collection',
+    name: siteMeta.name,
+    description: siteMeta.description,
+    creator: [{ '@id': '#laurence' }, { '@id': '#ayse' }],
+    publisher: { '@id': '#org' },
+    url: colenda,
+    genre: 'Documentary photography',
+    isAccessibleForFree: true,
+    image: heroImages.map((h) => `${base}${h}.jpg`),
+  },
+];
 ---
 
-<BaseLayout title="Home">
+<BaseLayout title="Home" pageType="CollectionPage" jsonLd={jsonLd}>
   <div class="container">
     <p class="eyebrow">University of Pennsylvania Libraries · Kislak Center</p>
     <h1 class="page-title home-title">
