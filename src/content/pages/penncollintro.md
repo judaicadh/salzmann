@@ -21,4 +21,4 @@ Collected photographs and materials includes only a few items, including images 
 
 Taken as a whole, this collection provides glimpses into a number of worlds not typically documented — immigrants, the poor, shepherds, and changing or vanishing communities. In addition, the viewpoint of the photographer, Laurence Salzmann, is evident, providing insight into the man behind the images.
 
-*For comprehensive details of the Laurence Salzmann collection at Penn, see the Finding Aid. The majority of the collection can be viewed online via the Penn Libraries image repository, [Digital Collections](https://digitalcollections.library.upenn.edu/items?f%5Bcollection_ssim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection).*
+*For comprehensive details of the Laurence Salzmann collection at Penn, see the [Finding Aid](https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL.1424). The majority of the collection can be viewed online via the Penn Libraries image repository, [Digital Collections](https://digitalcollections.library.upenn.edu/items?f%5Bcollection_ssim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection).*
