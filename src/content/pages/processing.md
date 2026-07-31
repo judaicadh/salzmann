@@ -7,7 +7,7 @@ order: 4
 
 ## Digital material in the Salzmann Collection
 
-The born-digital material and the digital versions of photographs are available on [Colenda, the Penn Libraries' image repository](https://colenda.library.upenn.edu/?f%5Bcollection_sim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection).
+The born-digital material and the digital versions of photographs are available on [Digital Collections, the Penn Libraries' image repository](https://digitalcollections.library.upenn.edu/items?f%5Bcollection_ssim%5D%5B%5D=Laurence+and+Ay%C5%9Fe+G%C3%BCrsan-Salzmann+Collection).
 
 The physical collection is arranged in two series: Series I: Photo, film and book projects; and Series II: Collected photographs and material.
 
