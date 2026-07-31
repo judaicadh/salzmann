@@ -45,6 +45,21 @@ export const heroImages: HeroImage[] = [
     service: 'https://iiif-images.library.upenn.edu/iiif/3/d99ada98-b20f-4c70-9d13-d51c2df43ba5',
     label: '[Souvenirs of a Recent Time; 1974-1976; photograph 0031]',
   },
+  {
+    itemId: 'b44fbab2-bf66-433b-84c6-6ef386a24f1e',
+    service: 'https://iiif-images.library.upenn.edu/iiif/3/259c927a-1d63-48e0-9738-26c0dc13868d',
+    label: '[The City 2; 1971; photograph 0088]',
+  },
+  {
+    itemId: '9e903349-8614-4470-9cf6-d046be617258',
+    service: 'https://iiif-images.library.upenn.edu/iiif/3/498f29a9-dedc-4980-8a48-d519b768c0d8',
+    label: '[Echele Ganas; 2007; photograph 0246]',
+  },
+  {
+    itemId: '1fd54e77-1e8b-4491-aca5-a8e687885787',
+    service: 'https://iiif-images.library.upenn.edu/iiif/3/0292101d-1b80-4668-91d1-a9b1ca38b5a7',
+    label: '[Turkey; photograph 0837]',
+  },
 ];
 
 // A centered square crop at the given pixel size (IIIF `square` region, level2).
