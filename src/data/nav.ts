@@ -28,9 +28,9 @@ export const nav: NavItem[] = [
     href: '/penncoll',
     children: [
       { label: 'Introduction', href: '/penncollintro' },
-      { label: 'Online Photos 1967–1976', href: '/online6776' },
-      { label: 'Online Photos 1976–1991', href: '/online7691' },
-      { label: 'Online Photos 1995–2009', href: '/online9509' },
+      { label: 'Online Photos 1967–1976', href: '/photos-1967-1976' },
+      { label: 'Online Photos 1976–1991', href: '/photos-1976-1991' },
+      { label: 'Online Photos 1995–2009', href: '/photos-1995-2009' },
     ],
   },
   { label: 'Map', href: '/map' },
