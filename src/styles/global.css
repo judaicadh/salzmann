@@ -267,42 +267,6 @@ hr {
   color: var(--ink);
   box-shadow: inset 0 -2px 0 var(--accent);
 }
-.has-children > .top-link::after {
-  content: "";
-  display: inline-block;
-  width: 0.4em;
-  height: 0.4em;
-  margin-left: 0.4em;
-  border-right: 1.5px solid currentColor;
-  border-bottom: 1.5px solid currentColor;
-  transform: translateY(-2px) rotate(45deg);
-  opacity: 0.55;
-}
-.submenu {
-  position: absolute;
-  top: calc(100% + 4px);
-  left: 0;
-  min-width: 15rem;
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: 0 18px 48px -18px rgba(0, 0, 0, 0.8);
-  padding: 0.35rem;
-  display: none;
-  flex-direction: column;
-  gap: 0;
-}
-.submenu li {
-  width: 100%;
-}
-.has-children:hover .submenu,
-.has-children:focus-within .submenu {
-  display: flex;
-}
-.submenu a {
-  padding: 0.5rem 0.75rem;
-}
-
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--line);
@@ -371,6 +335,19 @@ hr {
 }
 .gallery__item {
   margin: 0;
+  /* Offset for the sticky header when deep-linked from the map's "View gallery" */
+  scroll-margin-top: 6rem;
+}
+/* Highlight the card the map deep-linked to */
+.gallery__item:target .gallery__frame {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+.gallery__item:target .gallery__frame img {
+  filter: grayscale(0%) brightness(1);
+}
+.gallery__item:target .gallery__title a {
+  color: var(--accent);
 }
 .gallery__frame {
   display: block;
@@ -536,41 +513,57 @@ hr {
 .leaflet-control-attribution a {
   color: var(--ink-soft) !important;
 }
+/* Popup: forced dark, since Leaflet's stylesheet loads after this file and would
+   otherwise win (white wrapper + blue links). !important + container specificity. */
 .leaflet-popup-content-wrapper {
-  background: var(--panel);
-  color: var(--ink);
-  border: 1px solid var(--line);
+  background: var(--panel-2) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--line-strong);
   border-radius: var(--radius);
   box-shadow: 0 18px 48px -18px rgba(0, 0, 0, 0.85);
 }
 .leaflet-popup-tip {
-  background: var(--panel);
-  border: 1px solid var(--line);
+  background: var(--panel-2) !important;
+  border: 1px solid var(--line-strong);
 }
-.leaflet-popup-close-button {
+.leaflet-container a.leaflet-popup-close-button {
   color: var(--ink-faint) !important;
+}
+.leaflet-container a.leaflet-popup-close-button:hover {
+  color: var(--ink) !important;
 }
 .leaflet-popup-content {
   font-family: var(--sans);
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.92rem;
+  line-height: 1.55;
   color: var(--ink-soft);
+  margin: 0.9rem 1.1rem;
 }
 .leaflet-popup-content h3 {
   font-family: var(--display);
-  font-weight: 400;
+  font-weight: 500;
   color: var(--ink);
-  margin: 0 0 0.25rem;
-  font-size: 1.15rem;
+  margin: 0 0 0.3rem;
+  font-size: 1.1rem;
+  line-height: 1.2;
 }
 .leaflet-popup-content .yr {
   color: var(--accent);
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
+  font-weight: 600;
 }
 .leaflet-popup-content p {
-  margin: 0.5rem 0;
+  margin: 0.55rem 0;
+  color: var(--ink-soft);
+}
+.leaflet-container .leaflet-popup-content a {
+  color: var(--accent) !important;
+  font-weight: 500;
+}
+.leaflet-container .leaflet-popup-content a:hover {
+  color: var(--accent-bright) !important;
 }
 
 /* ---------- Utility ---------- */
@@ -626,18 +619,6 @@ code {
   }
   .nav > ul > li {
     border-bottom: 1px solid var(--line);
-  }
-  .submenu {
-    position: static;
-    display: flex;
-    border: none;
-    box-shadow: none;
-    background: transparent;
-    padding: 0 0 0.4rem 0.8rem;
-    min-width: 0;
-  }
-  .has-children > .top-link::after {
-    display: none;
   }
 }
 

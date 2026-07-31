@@ -10,12 +10,23 @@ interface Props {
   items: Item[];
 }
 const { items } = Astro.props;
+
+// Slug used as an anchor id so the map's "View gallery" link can deep-link to a
+// specific project card. Must stay in sync with the `#fragment` in locations.json.
+const slugify = (s: string) =>
+  s
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-|-$/g, '');
 ---
 
 <ul class="gallery">
   {
     items.map((item) => (
-      <li class="gallery__item">
+      <li class="gallery__item" id={slugify(item.title)}>
         <a
           class="gallery__frame"
           href={item.url ?? '#'}

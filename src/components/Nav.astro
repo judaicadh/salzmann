@@ -14,27 +14,10 @@ const isActive = (href: string) => {
   <ul>
     {
       nav.map((item) => (
-        <li class={item.children ? 'has-children' : ''}>
-          {item.children ? (
-            <>
-              <a class="top-link" href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
-                {item.label}
-              </a>
-              <ul class="submenu">
-                {item.children.map((child) => (
-                  <li>
-                    <a href={child.href} aria-current={isActive(child.href) ? 'page' : undefined}>
-                      {child.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </>
-          ) : (
-            <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
-              {item.label}
-            </a>
-          )}
+        <li>
+          <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
+            {item.label}
+          </a>
         </li>
       ))
     }
