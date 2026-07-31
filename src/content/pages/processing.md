@@ -20,3 +20,8 @@ Projects include: Aegean Stones, Bagels, La Baie/Bath Scenes, Cardon Cactus, Cit
 ## Series II
 
 Series II, collected photographs and materials, includes only a few items. These include images of art not created by Salzmann and largely from the Jewish Museum of Greece, business cards, and a number of historic wedding photographs from Romania. These wedding photographs, called Mircea Juga, document dozens of couples wearing traditional dress and are professional cartes-de-visite.
+
+
+## Finding Aid
+
+See the finding aid for the collection [here](https://findingaids.library.upenn.edu/records/UPENN_RBML_PUSP.MS.COLL.1424) 
