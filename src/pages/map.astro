@@ -62,13 +62,13 @@ const points = locData.locations.map((l) => ({
         var points = JSON.parse(document.getElementById('map-data').textContent);
 
         var map = L.map('map', { scrollWheelZoom: false }).setView([25, -5], 2);
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+        L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
           attribution:
             '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
           maxZoom: 19,
         }).addTo(map);
 
-        var accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#42586b';
+        var accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim() || '#d7a24a';
         var markers = {};
         var bounds = [];
 
@@ -84,10 +84,10 @@ const points = locData.locations.map((l) => ({
 
           var m = L.circleMarker([p.lat, p.lng], {
             radius: 8,
-            color: accent,
-            weight: 2,
+            color: '#fff',
+            weight: 1.5,
             fillColor: accent,
-            fillOpacity: 0.55,
+            fillOpacity: 0.9,
           })
             .addTo(map)
             .bindPopup(popup, { maxWidth: 280 });
