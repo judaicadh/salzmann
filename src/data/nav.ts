@@ -44,5 +44,6 @@ export const nav: NavItem[] = [
       { label: 'Processing the Collection', href: '/processing' },
       { label: 'External Links', href: '/links' },
     ],
-  }
+  },
+  { label: 'Contact', href: '/contact' },
 ];
