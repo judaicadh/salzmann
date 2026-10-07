@@ -39,6 +39,7 @@ export const nav: NavItem[] = [
     href: '/aboutthecollection',
     children: [
       { label: 'The Website and the Collection', href: '/website' },
+      { label: 'A Story That Should Be Remembered', href: '/a-story-that-should-be-remembered' },
       { label: 'Acknowledgments', href: '/acknowledgments' },
       { label: 'Using the Images', href: '/fairuse' },
       { label: 'Processing the Collection', href: '/processing' },

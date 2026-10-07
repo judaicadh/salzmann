@@ -5,7 +5,7 @@ section: "penn"
 order: 1
 ---
 
-This collection contains a significant portion of the photographic output from Laurence Salzmann's long career in documenting little known communities throughout the world. Researchers will find black and white and color photographs dating from 1967 to 2018; as well as other photographic, book, and film project documentation, such as book mock-ups, exhibition publicity and planning, and biographical sketches of subjects of photographs.
+This collection contains a significant portion of the photographic output from Laurence Salzmann's long career in documenting little known communities throughout the world. Researchers will find black and white and color photographs dating from 1967 to 2018; as well as other photographic, book, and film project documentation, such as book mock-ups, exhibition publicity and planning, and biographical sketches of subjects of photographs. The University of Pennsylvania received Salzmann's photographic archive; his film archive was not part of the gift. The film- and book-related items described here are project documentation rather than the films or books themselves.
 
 This collection is arranged in two series: Series I. Photo, film and book projects; and Series II. Collected photographs and material.
 
