@@ -5,6 +5,9 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://salzmann.judaicadh.penn.org',
   base: '/',
+  // Honor a PORT assigned by the harness (autoPort) so the dev server avoids
+  // colliding with other local servers; falls back to Astro's default otherwise.
+  server: { port: Number(process.env.PORT) || 4321 },
   build: {
     format: 'directory',
   },
