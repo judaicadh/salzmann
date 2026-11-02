@@ -9,16 +9,16 @@ Laurence Salzmann has published over twenty books through Blueflower Press and B
 
 **Books.** A list of books, published by both Blueflower Press and Blurb Press, is available on the Blueflower Press web site at [blueflowerpress.com/laurencesalzmann/Books.html](http://www.blueflowerpress.com/laurencesalzmann/Books.html) and [blueflowerpress.com/index2.html](http://www.blueflowerpress.com/index2.html).
 
-![Books](https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/49dc0af218755169ac5e92e4d55b96f9.jpg)
+![Books](https://iiif-images.library.upenn.edu/iiif/3/259c927a-1d63-48e0-9738-26c0dc13868d/full/900,/0/default.jpg)
 
 **Photo Essays.** A list of photo essays is available on the Blueflower Press web site at [blueflowerpress.com/laurencesalzmann/Series.html](http://www.blueflowerpress.com/laurencesalzmann/Series.html).
 
-![Photo Essays](https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/6018bcbfa19e5ce04b55c782322eb0b9.jpg)
+![Photo Essays](https://iiif-images.library.upenn.edu/iiif/3/517b2abd-6518-45eb-aafd-ce3e3aa4e09c/full/900,/0/default.jpg)
 
 **Photo Montages.** A list of video photo montages is available on the Blueflower Press web site at [blueflowerpress.com/retro.html](http://www.blueflowerpress.com/retro.html).
 
-![Photo Montages](https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/3f3cd4de324192c09fe75f2d7d8e4318.jpg)
+![Photo Montages](https://iiif-images.library.upenn.edu/iiif/3/fe8d1e3d-6115-4867-8afe-fdb5c0ee7ee4/full/900,/0/default.jpg)
 
 **Films.** A list of films is available on the Blueflower Press web site at [blueflowerpress.com/index2.html](http://www.blueflowerpress.com/index2.html).
 
-![Films](https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/4c593eb6819c9ec486bb04246ddfdfed.jpg)
+![Films](https://iiif-images.library.upenn.edu/iiif/3/498f29a9-dedc-4980-8a48-d519b768c0d8/full/900,/0/default.jpg)

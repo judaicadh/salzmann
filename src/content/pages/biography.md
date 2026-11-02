@@ -3,7 +3,7 @@ title: "Introduction"
 heading: "Biography: Introduction"
 section: "salzmann"
 order: 1
-image: "https://laurencesalzmann.exhibits.library.upenn.edu/files/fullsize/08c76dd84583cda92395a8c1f725192e.jpg"
+image: "https://iiif-images.library.upenn.edu/iiif/3/0f66bd22-9454-452e-b91c-082ccfdea0e6/full/900,/0/default.jpg"
 ---
 
 Laurence Salzmann is a photographer and filmmaker from Philadelphia, Pennsylvania whose love of photography began with his first camera, a Brownie Hawkeye, at age eleven. Over the course of his career, he has focused on social commentaries on little known groups in America and abroad, with a particular emphasis on the Jewish people in Eastern Europe and the Middle East.
